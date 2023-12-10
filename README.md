@@ -21,5 +21,5 @@ Welcome to the Bookish Boulevard project! This is a full-stack e-commerce applic
 
 - **Frontend:**
   - React
-  - create-react-app
+  - vite
   - Axios (for HTTP requests)
