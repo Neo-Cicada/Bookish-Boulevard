@@ -2,11 +2,11 @@ package com.bookishboulevard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @RestController
+@CrossOrigin(origins = "http://127.0.0.1:5173")
 public class BookishBoulevardBackendApplication {
 
 	public static void main(String[] args) {
@@ -14,8 +14,8 @@ public class BookishBoulevardBackendApplication {
 	}
 
 	@GetMapping("/")
-	public String great(){
-		return "Hello";
+	public String getHello() {
+		return "Hello World";
 	}
 
 }
