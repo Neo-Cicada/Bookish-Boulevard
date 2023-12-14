@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import Header from './components/common/Header';
+import BooksRouter from './utils/BooksRouter';
+import Footer from './components/common/Footer';
 
 function App() {
-
-
   return (
     <>
-      <>
-        <h1>this is a sample message</h1>
-      </>
+      <Header />
+
+      <BooksRouter />
+
+      <Footer />
     </>
   );
 }
