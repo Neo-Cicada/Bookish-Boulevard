@@ -1,4 +1,3 @@
-import React from 'react'
 import SearchButton from './SearchButton'
 import Navigation from './Navigation'
 import { Link } from 'react-router-dom'
