@@ -1,30 +1,31 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 export default function Navigation() {
     return (
         <>
             <ul className='flex w-full md:w-[75%] justify-around'>
-                <li className='cursor-pointer'>
+                <li className='cursor-pointer text-sm font-bold'>
                     <NavLink to="/fiction"
-                        style={({ isActive }) => (isActive ? { borderBottom: '1px solid red' } : null)}
+                        style={({ isActive }) => (isActive ? { color: "#74642F", borderBottom: "2px solid #74642F" } : null)}
                     >
-                        Fiction</NavLink>
+                        FICTION</NavLink>
                 </li>
-                <li className='cursor-pointer'><NavLink
-                    to="/nonFiction"
-                    style={({ isActive }) => (isActive ? { borderBottom: '1px solid red' } : null)}
+                <li className='cursor-pointer text-sm font-bold'>
+                    <NavLink
+                        to="/nonFiction"
+                        style={({ isActive }) => (isActive ? { color: "#74642F", borderBottom: "2px solid #74642F" } : null)}
 
-                > Non-Fiction</NavLink></li>
-                <li className='cursor-pointer'>
+                    > NON-FICTION</NavLink></li>
+                <li className='cursor-pointer text-sm font-bold'>
                     <NavLink
                         to="/biographies"
-                        style={({ isActive }) => (isActive ? { borderBottom: '1px solid red' } : null)}
+                        style={({ isActive }) => (isActive ? { color: "#74642F", borderBottom: "2px solid #74642F" } : null)}
 
-                    >Biographies</NavLink></li>
-                <li className='cursor-pointer'> <NavLink
-                    style={({ isActive }) => (isActive ? { borderBottom: '1px solid red' } : null)}
+                    >BIOGRAPHIES</NavLink></li>
+                <li className='cursor-pointer text-sm font-bold'>
+                    <NavLink
+                        style={({ isActive }) => (isActive ? { color: "#74642F", borderBottom: "2px solid #74642F" } : null)}
 
-                    to="/children">Children</NavLink></li>
+                        to="/children">CHILDREN</NavLink></li>
             </ul>
         </>
     )
