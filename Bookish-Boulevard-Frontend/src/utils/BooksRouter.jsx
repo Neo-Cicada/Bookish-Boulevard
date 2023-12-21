@@ -4,7 +4,7 @@ import Fictions from '../pages/Fictions'
 import NonFiction from '../pages/NonFiction'
 import Biographies from '../pages/Biographies'
 import Children from '../pages/Children'
-import Landing from '../pages/Landing'
+import Landing from '../pages/landing/Landing'
 export default function BooksRouter() {
     return (
 
