@@ -12,10 +12,10 @@ const FeaturedBooks = () => {
                                 BOOK COVER
                             </div>
                         </div>
-                        <div className="border border-red-500 w-[60%] md:w-full md:h-[40%]">
-                            <p>title</p>
-                            <p>Author</p>
-                            <p>Price $</p>
+                        <div className="border border-red-500 w-[60%] md:w-full md:h-[40%] flex flex-col justify-around items-center">
+                            <p>Once upon a time</p>
+                            <p>Klien Marry</p>
+                            <p>1000</p>
                         </div>
 
                     </div>
@@ -27,10 +27,10 @@ const FeaturedBooks = () => {
 
                             </div>
                         </div>
-                        <div className="border border-red-500 w-[60%] md:w-full md:h-[40%]">
-                            <p>title</p>
-                            <p>Author</p>
-                            <p>Price $</p>
+                        <div className="border border-red-500 w-[60%] md:w-full md:h-[40%] flex flex-col justify-around items-center">
+                            <p>Once upon a time</p>
+                            <p>Klien Marry</p>
+                            <p>1000</p>
                         </div>
 
                     </div>
@@ -42,10 +42,10 @@ const FeaturedBooks = () => {
 
                             </div>
                         </div>
-                        <div className="border border-red-500 w-[60%] md:w-full md:h-[40%]">
-                            <p>title</p>
-                            <p>Author</p>
-                            <p>Price $</p>
+                        <div className="border border-red-500 w-[60%] md:w-full md:h-[40%] flex flex-col justify-around items-center">
+                            <p>Once upon a time</p>
+                            <p>Klien Marry</p>
+                            <p>1000</p>
                         </div>
 
                     </div>
@@ -56,10 +56,10 @@ const FeaturedBooks = () => {
                                 BOOK COVER
                             </div>
                         </div>
-                        <div className="border border-red-500 w-[60%] md:w-full md:h-[40%]">
-                            <p>title</p>
-                            <p>Author</p>
-                            <p>Price $</p>
+                        <div className="border border-red-500 w-[60%] md:w-full md:h-[40%] flex flex-col justify-around items-center">
+                            <p>Once upon a time</p>
+                            <p>Klien Marry</p>
+                            <p>1000</p>
                         </div>
 
                     </div>
