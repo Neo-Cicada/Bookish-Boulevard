@@ -17,7 +17,7 @@ const BestSelling = () => {
                         <p className="md:text-[28px] font-bold">Title</p>
                         <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.</p>
                         <p className="md:text-[23px]">999$</p>
-                        <button className="border border-red-500 w-44">Shop It Now </button>
+                        <button className="border border-gray-400 w-32 hover:border-none min-w-0 h-10 hover:bg-amber-800 hover:text-white">SHOP NOW</button>
                     </div>
 
                 </div>
