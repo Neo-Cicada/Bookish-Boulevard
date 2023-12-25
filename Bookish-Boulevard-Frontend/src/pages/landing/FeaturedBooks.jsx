@@ -1,10 +1,10 @@
 
-const FeaturedBooks = () => {
+const FeaturedBooks = ({ title = "Featured Books" }) => {
     return (
         <>
             <div className="h-[100vh] max-h-[1000px] border border-red-500 max-w-screen-2xl m-auto min-w-[360px] ">
-                <p className="h-[8%] text-center font-extrabold md:text-[47px] text-[30px]">Featured Books</p>
-                <div className="h-[92%] md:flex md:justify-around items-center ">
+                <p className="h-[10%] text-center font-extrabold md:text-[47px] text-[30px]">{title}</p>
+                <div className="h-[82%] md:flex md:justify-around items-center ">
                     <div className="h-1/4 md:h-[437px] border border-red-500 md:w-52 flex flex-row md:flex-col">
 
                         <div className="border border-red-500 w-[60%] md:w-full md:h-[60%] flex items-center justify-center">
@@ -63,9 +63,13 @@ const FeaturedBooks = () => {
                         </div>
 
                     </div>
+
                 </div>
-
+                <div className="h-[8%] flex justify-center items-center">
+                    <button className="h-full border border-red-500 w-[250px]">View More</button>
+                </div>
             </div>
+
         </>
     )
 }
