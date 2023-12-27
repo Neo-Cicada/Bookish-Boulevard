@@ -25,7 +25,7 @@ export default function Landing() {
             <BestSelling />
             <PopularBooks />
             <Quotes />
-            <FeaturedBooks title="Books With Offer"/>
+            <FeaturedBooks title="Books With Offer" />
         </>
     )
 }
