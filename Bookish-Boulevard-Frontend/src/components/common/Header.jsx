@@ -38,6 +38,7 @@ export default function Header() {
                 </div>
 
             </div>
+            
             {(!burger && isMobile) && <div className='w-full  h-[40vh] z-40 absolute top-15 left-0 right-0 min-w-[360px]'>
                 <ul className='w-full border border-amber-900 h-full flex flex-col items-center justify-around'>
                     <li>

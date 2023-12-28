@@ -66,7 +66,7 @@ const FeaturedBooks = ({ title = "Featured Books" }) => {
 
                 </div>
                 <div className="h-[8%] flex justify-center items-center">
-                    <button className="h-full border border-red-500 w-[250px]">View More</button>
+                    <button className="border border-gray-400 w-32 hover:border-none min-w-0 h-10 hover:bg-amber-800 hover:text-white">View More</button>
                 </div>
             </div>
 
