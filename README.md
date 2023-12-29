@@ -24,4 +24,16 @@ Welcome to the Bookish Boulevard project! This is a full-stack e-commerce applic
   - vite
   - Tailwind
   - JavaScript for User / TypeScript for Admin
- 
+
+## Technologies at a Glance
+
+Bookish Boulevard leverages a powerful stack of technologies to provide a seamless and engaging user experience:
+
+- **Java:** *Backend development powerhouse.*
+- **Spring Boot:** *Simplifying Java development.*
+- **React:** *Crafting an interactive and dynamic user interface.*
+- **Vite:** *Streamlining frontend development.*
+- **Tailwind:** *Styling made easy.*
+- **JavaScript/TypeScript:** *Tailored for both user and admin interfaces.*
+
+
