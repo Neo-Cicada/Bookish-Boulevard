@@ -1,3 +1,4 @@
+import RouterPages from "./components/RouterPages"
 import Sidebar from "./components/Sidebar"
 import Dashboard from "./components/dashboard/Dashboard"
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <>
       <div className="flex">
         <Sidebar />
-        <Dashboard/>
+        <RouterPages/>
       </div>
 
     </>
