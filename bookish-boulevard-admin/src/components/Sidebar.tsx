@@ -1,6 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import SpaceDashboardOutlinedIcon from '@mui/icons-material/SpaceDashboardOutlined';
+import InventoryOutlinedIcon from '@mui/icons-material/InventoryOutlined';
+import Diversity3OutlinedIcon from '@mui/icons-material/Diversity3Outlined';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
+import MultipleStopOutlinedIcon from '@mui/icons-material/MultipleStopOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
 interface CustomNavLinkProps {
   to: string;
   children: React.ReactNode;
@@ -15,28 +22,54 @@ const CustomNavLink: React.FC<CustomNavLinkProps> = ({ to, children, icon }) => 
       fontWeight: isActive ? "bold" : "normal",
     })}
   >
-    {icon}
-    {children}
+    <div className="hidden text-center md:flex md:pl-6 sm:hidden lg:text-[18px] md:text-[13px] font-medium">
+      {children}
+    </div>
+    <div className="text-center md:hidden"> {icon}</div>
+
   </NavLink>
 );
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="w-[15%] border bg-[#EDEDED] border-red-500 h-[100vh] flex flex-col justify-between">
+    <div className="w-[16%] border bg-[#EDEDED h-[100vh] flex flex-col justify-between">
       <h1>Logo</h1>
 
-      <ul className="flex flex-col items-center justify-between h-[70%] border border-red-500">
-        <CustomNavLink to="/" icon={<SpaceDashboardOutlinedIcon />}>Dashboard</CustomNavLink>
-        <CustomNavLink to="/product">Product</CustomNavLink>
-        <CustomNavLink to="/customer">Customer</CustomNavLink>
-        <CustomNavLink to="/orders">Orders</CustomNavLink>
-        <CustomNavLink to="/shipment">Shipments</CustomNavLink>
-        <CustomNavLink to="/transactions">Transactions</CustomNavLink>
-        <CustomNavLink to="/settings">
-          <button>Settings</button>
-        </CustomNavLink>
-        <li>
-          <button>Logout</button>
+      <ul className="flex flex-col items-center justify-between h-[70%]">
+        <li className="w-full">
+          <CustomNavLink to="/" icon={<SpaceDashboardOutlinedIcon fontSize="large" />}>DASHBOARD</CustomNavLink>
+        </li>
+        <li className="w-full">
+          <CustomNavLink to="/product" icon={<InventoryOutlinedIcon fontSize="large" />}>PRODUCT</CustomNavLink>
+        </li>
+        <li className="w-full">
+          <CustomNavLink to="/customer" icon={<Diversity3OutlinedIcon fontSize="large" />}>CUSTOMER</CustomNavLink>
+        </li>
+        <li className="w-full">
+          <CustomNavLink to="/orders" icon={<ShoppingCartOutlinedIcon fontSize="large" />}>ORDERS</CustomNavLink>
+        </li>
+        <li className="w-full">
+          <CustomNavLink to="/shipment" icon={<LocalShippingOutlinedIcon fontSize="large" />}>SHIPMENTS</CustomNavLink>
+        </li>
+        <li className="w-full">
+          <CustomNavLink to="/transactions" icon={<MultipleStopOutlinedIcon fontSize="large" />}>TRANSACTIONS</CustomNavLink>
+        </li>
+
+        <li className="w-full">
+          <CustomNavLink to="/settings" icon={<SettingsOutlinedIcon fontSize="large" />}>
+            <button>SETTINGS</button>
+          </CustomNavLink>
+        </li>
+
+        <li className="w-full">
+          <button className="w-full">
+            <div className="hidden text-center md:flex md:pl-6 sm:hidden">
+              LOGOUT
+            </div>
+            <div className="text-center md:hidden">
+              <ExitToAppOutlinedIcon fontSize="large" />
+            </div>
+          </button>
         </li>
       </ul>
 
