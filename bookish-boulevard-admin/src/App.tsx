@@ -6,7 +6,10 @@ function App() {
     <>
       <div className="flex">
         <Sidebar />
-        <RouterPages/>
+        <div className="w-full border border-red-500 h-100vh">
+          <RouterPages />
+        </div>
+
       </div>
 
     </>
