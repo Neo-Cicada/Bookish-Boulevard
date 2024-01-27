@@ -32,7 +32,7 @@ function App() {
     <MyContext.Provider value={contextValue}>
       <div className="flex">
         <Sidebar />
-        <div className="w-full border border-red-500 h-100vh">
+        <div className="w-full border border-red-500 max-h-[100vh]">
           <div className="h-[10%] flex justify-between items-center">
             <div>{currentDirectory}</div>
             <div>{currentTime.toLocaleString()}</div>
