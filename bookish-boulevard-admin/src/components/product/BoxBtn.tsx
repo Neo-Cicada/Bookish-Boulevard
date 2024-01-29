@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { useState } from "react"
-import CreateItem from "./CreateItem"
+import DialogBox from "./DialogBox"
 const BoxBtn: FC<{ name: string }> = ({ name }) => {
     const [isBoxOpen, setBoxOpen] = useState(false)
     const onPress = () => {
@@ -8,13 +8,13 @@ const BoxBtn: FC<{ name: string }> = ({ name }) => {
     }
     return (
         <>
-            <div className='h-full bg-white w-[20%] rounded-md flex items-center justify-center'
+            <div className='h-full bg-white w-[20%] rounded-md flex items-center justify-center cursor-pointer'
                  onClick={()=>setBoxOpen(!isBoxOpen)}
                 >
                 {name}
             </div>
 
-            {isBoxOpen && <CreateItem />}
+            {isBoxOpen && <DialogBox setBoxOpen={setBoxOpen} />}
         </>
     )
 }
