@@ -52,13 +52,6 @@ const Sidebar: React.FC = () => {
         </li>
         <li className="w-full">
           <CustomNavLink
-            to="/customer"
-            icon={<Diversity3OutlinedIcon fontSize="large" />}
-            clicked={() => setCurrentDirectory('CUSTOMER')}>CUSTOMER
-          </CustomNavLink>
-        </li>
-        <li className="w-full">
-          <CustomNavLink
             to="/orders"
             icon={<ShoppingCartOutlinedIcon fontSize="large" />}
             clicked={() => setCurrentDirectory('ORDERS')}>ORDERS</CustomNavLink>
