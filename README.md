@@ -16,7 +16,7 @@ Welcome to the Bookish Boulevard project! This is a full-stack e-commerce applic
 - **Backend:**
   - Java
   - Spring Boot
-  - Spring Data JPA
+  - POSGRESSQL
   - Spring Security
 
 - **Frontend:**
