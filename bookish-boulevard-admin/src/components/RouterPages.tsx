@@ -5,6 +5,7 @@ import Orders from "./orders/Orders"
 import Shipment from "./shipment/Shipment"
 import Transactions from "./transactions/Transactions"
 import Settings from "./settings/Settings"
+import Login from './Auths/Login'
 export default function RouterPages() {
     return (
         <Routes>
@@ -14,6 +15,7 @@ export default function RouterPages() {
             <Route path="shipment" element={<Shipment />} />
             <Route path="transactions" element={<Transactions />} />
             <Route path="settings" element={<Settings />} />
+            <Route path="login" element={<Login/>}/>
         </Routes>
     )
 }
