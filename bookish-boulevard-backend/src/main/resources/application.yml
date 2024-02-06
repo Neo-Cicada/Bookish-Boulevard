@@ -1,6 +1,16 @@
 server:
-    port: 8080
+    port: 9090
 
 spring:
     main:
         web-application-type: servlet
+    datasource:
+        url: jdbc:postgresql://localhost:5432/bookshop
+        username: neo
+        password: NEO12345
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
