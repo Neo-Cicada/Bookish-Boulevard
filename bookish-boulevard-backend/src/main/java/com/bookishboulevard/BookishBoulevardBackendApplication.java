@@ -15,7 +15,7 @@ public class BookishBoulevardBackendApplication {
 
 	@GetMapping("/")
 	public String getHello() {
-		return "Hello World";
+		return "Server";
 	}
 
 }
