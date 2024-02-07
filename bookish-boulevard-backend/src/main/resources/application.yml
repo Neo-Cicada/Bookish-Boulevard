@@ -5,7 +5,7 @@ spring:
     main:
         web-application-type: servlet
     datasource:
-        url: jdbc:postgresql://localhost:5432/bookshop
+        url: jdbc:postgresql://localhost:8080/bookshop
         username: neo
         password: NEO12345
     jpa:
