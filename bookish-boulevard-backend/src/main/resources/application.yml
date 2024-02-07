@@ -1,11 +1,14 @@
 server:
+    # port for springboot
     port: 9090
 
 spring:
     main:
         web-application-type: servlet
     datasource:
-        url: jdbc:postgresql://localhost:8080/bookshop
+        # 8080 is the localhost of postgres
+        url: jdbc:postgresql://localhost:8080/bookshop 
+        # Username and password for postgres
         username: neo
         password: NEO12345
     jpa:
