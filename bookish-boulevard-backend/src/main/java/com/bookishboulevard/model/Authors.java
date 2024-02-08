@@ -6,9 +6,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import com.bookishboulevard.model.Books;
+import jakarta.persistence.Table;
+
+// import com.bookishboulevard.model.Books;
 @Entity
+@Table(name = "authors")
 public class Authors {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -16,8 +18,7 @@ public class Authors {
     private Long id;
     private String name;
 
-    @OneToMany(mappedBy = "authors")
-    private List<Books> books;
+    // private List<Books> books;
     
     private Authors(){};
 
