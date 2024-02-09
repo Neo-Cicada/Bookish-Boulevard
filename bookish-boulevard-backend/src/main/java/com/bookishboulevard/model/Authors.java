@@ -18,7 +18,6 @@ public class Authors {
     private Long id;
     private String name;
 
-    // private List<Books> books;
     
     private Authors(){};
 
