@@ -10,13 +10,15 @@ import jakarta.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 @Entity
 @Table(name = "book")
 public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer book_id;
 
     private String title;
 
@@ -24,7 +26,6 @@ public class Book {
 
     private double price;
 
-    @ElementCollection
     private List<String> authors;
 
     private Book() {
@@ -37,8 +38,8 @@ public class Book {
         this.authors = authors;
     }
 
-    public Integer getId() {
-        return this.id;
+    public Integer getBook_id() {
+        return this.book_id;
     }
 
     public String getTitle() {
