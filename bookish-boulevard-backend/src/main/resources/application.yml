@@ -7,13 +7,13 @@ spring:
         web-application-type: servlet
     datasource:
         # 8080 is the localhost of postgres
-        url: jdbc:postgresql://localhost:8080/bookshop 
+        url: jdbc:postgresql://localhost:8080/bookBoulevard 
         # Username and password for postgres
         username: neo
         password: NEO12345
     jpa:
         hibernate:
             ddl-auto: update
-        properties:
-            hibernate:
-                dialect: org.hibernate.dialect.PostgreSQLDialect
+            properties:
+                hibernate:
+                    dialect: org.hibernate.dialect.PostgreSQLDialect
