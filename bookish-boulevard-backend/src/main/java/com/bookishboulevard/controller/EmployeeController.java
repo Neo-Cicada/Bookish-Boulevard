@@ -14,7 +14,6 @@ import com.bookishboulevard.repository.EmployeeRepository;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import java.util.Optional;
-import org.springframework.http.HttpStatus;
 
 @RestController
 public class EmployeeController {
