@@ -28,7 +28,7 @@ public class Customers {
     private String customerAddress;
     private String customerPhone_number;
 
-    private Customers() {
+    public Customers() {
     }
 
     public Customers(String name, String email, String address, String phone_number) {
@@ -40,6 +40,9 @@ public class Customers {
 
     public Integer getCustomerId() {
         return this.customer_id;
+    }
+    public void setCustomerId(Integer id){
+        this.customer_id = id;
     }
 
     public String getCustomerName() {

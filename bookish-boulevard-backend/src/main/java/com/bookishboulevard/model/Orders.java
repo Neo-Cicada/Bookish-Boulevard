@@ -6,11 +6,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-
-/**
- * Orders
- */
+import com.bookishboulevard.model.Customers;
 @Entity
 @Table(name = "orders")
 public class Orders {
@@ -21,8 +20,12 @@ public class Orders {
 
     private String status;
 
-    private Date orderDate;
+    // Define the relationship with Customers
+    @ManyToOne
+    @JoinColumn(name = "customer_id") // This will create a foreign key column named "customer_id"
+    private Customers customer;
 
+    private Date orderDate;
     private Double totalAmount;
 
     private Orders() {
@@ -62,4 +65,16 @@ public class Orders {
         this.totalAmount = totalAmount;
     }
 
+    // Getter and setter for customer
+    public Integer getCustomer_id() {
+        return customer != null ? customer.getCustomerId() : null;
+    }
+
+    // Setter for customer_id
+    public void setCustomer_id(Integer customerId) {
+        if (customer == null) {
+            customer = new Customers(); // Ensure customer object is initialized
+        }
+        customer.setCustomerId(customerId);
+    }
 }
