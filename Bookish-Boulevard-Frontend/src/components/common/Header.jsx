@@ -22,7 +22,7 @@ export default function Header() {
 
     return (
         <>
-            <div className="border border-red-500 flex flex-col md:flex-row h-[15vh] items-center justify-between max-w-screen-2xl mx-auto min-w-[360px] gap-2">
+            <div className="flex flex-col md:flex-row h-[15vh] items-center justify-between max-w-screen-2xl mx-auto min-w-[360px] gap-2">
                 <div className='flex flex-col sm:flex-row  justify-between items-center h-[100%] w-full ' >
                     <div className=' h-[100%] pl-4 sm:w-80  md:pl-8 text-2xl flex  items-center sm:justify-center justify-between w-full ' >
                         <Link to="/">
@@ -40,7 +40,7 @@ export default function Header() {
             </div>
             
             {(!burger && isMobile) && <div className='w-full  h-[40vh] z-40 absolute top-15 left-0 right-0 min-w-[360px]'>
-                <ul className='w-full border border-amber-900 h-full flex flex-col items-center justify-around'>
+                <ul className='flex flex-col items-center justify-around w-full h-full border border-amber-900'>
                     <li>
                         <NavLink to="/fiction"
                             style={({ isActive }) => (isActive ? { color: "#74642F", borderBottom: "2px solid #74642F" } : null)}
