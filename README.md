@@ -1,5 +1,5 @@
 # Bookish Boulevard an Online Bookstore
-Welcome to the Bookish Boulevard project! This is a full-stack e-commerce application built using Spring Boot for the backend and React for the frontend.
+Welcome to the Bookish Boulevard project! This is a full-stack e-commerce application built using Spring Boot for the backend and React for the frontend..
 
 ## Features
 
